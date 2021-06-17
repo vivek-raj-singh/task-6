@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("this is working");
+        let a = [12,23,12,43,12,34];
+        let b = [12,25,17,43,19,33];
+        let c = [];
+        let temp=0,k=0;
+        for(let i=0;i<a.length;++i)
+        {
+            temp=0;
+            for(let j=0;j<c.length;++j)
+            {
+                if(a[i]==c[j])
+                {temp=1;
+                    break;}
+            }
+            if(temp==0)
+            {c[k]=a[i];
+                ++k;}
+        }
+        for(let i=0;i<b.length;++i)
+        {
+            temp=0;
+            for(let j=0;j<c.length;++j)
+            {
+                if(b[i]==c[j])
+                {temp=1;
+                    break;}
+            }
+            if(temp==0)
+            {c[k]=b[i];
+                ++k;}
+        }
+        console.log(c);
+    </script>
+</body>
+</html>
